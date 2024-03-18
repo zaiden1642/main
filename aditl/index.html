@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Routine</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="img/pe.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b276d351e.js" crossorigin="anonymous" defer></script>
+    <script>
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+</script>
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+</head>
+
+<body>
+    <div id="header"><p>made by <a href="https://social.pnet.fun/zaiden">zaiden</a></p></div>
+    <div id="footer"><a href="https://www.youtube.com/@the_paragon_42/featured"><i class="fa-brands fa-youtube" style="color: #b4b4b7;"></i> The Paragon Channel</a> | <a href="https://pnet.fun"><i class="fa-regular fa-globe-pointer" style="color: #b4b4b7;"></i> pnet.fun</a> | <a href="https://social.pnet.fun"><img class="icon" src="img/main_logo.png"> ParagonNet</a><div class="btt" onclick="location.href='#top'"><i class="fa-solid fa-arrow-up-to-line"></i></div></div>
+    <div class="scroll-container">
+        <div id="top" class="scroll-area">  <div class="text-container" style="background: #8ec5fc;"><h1>Daily Routine</h1><br><p class="subject fw ah">PE - STEM 11 |</p><p class="subject fw ah">"A typical weekday of Robert Ramos"</p><p class="subject ah sub" style="font-size: 10px; margin-left: 3em">*weekday = no school</p>
+        
+                                            <div id="controls"><div id="down" onclick="location.href='#1'"><i class="fa-regular fa-down fa-2xl" style="color: #fff;"></i></div></div>
+                                            
+                                            </div>
+                                        
+                                            
+        
+                                            </div>
+        <div id="1" class="scroll-area">    <img class="v-img" src="img/830am.png">
+        
+                                            <div class="text-container" style="background: #3F51B5;"><h1>8:30AM</h1><br><p class="subject ah">Waking Up</p><p class="subject ah sub">*actually woke up around 8 but decided to start the day at 8:30</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#top'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#2'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">1</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="2" class="scroll-area">    <img class="v-img" src="img/9am.png">
+        
+                                            <div class="text-container" style="background: #FF9800;"><h1>9:00AM</h1><br><p class="subject ah">Eating Breakfast</p><p class="subject ah sub">*it was the only food left on the table when i woke up :)</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#1'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#3'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">2</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="3" class="scroll-area">    <img class="b-img" src="img/910am.png">
+        
+                                            <div class="text-container" style="background: #8BC34A;"><h1>9:10AM</h1><br><p class="subject ah">Hygiene Time</p><p class="subject ah sub">*showering, brushing teeth</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#2'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#4'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">3</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="4" class="scroll-area">    <img class="h-img" src="img/930am.png">
+        
+                                            <div class="text-container" style="background: #FFC107;"><h1>9:30AM</h1><br><p class="subject ah">Watching Educational Videos</p><p class="subject ah sub">helps me maintain a grip on my technical skills</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#3'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#5'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">4</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="5" class="scroll-area">    <img class="h-img" src="img/1230pm.png">
+        
+                                            <div class="text-container" style="background: #24273b;"><h1>12:30PM</h1><br><p class="subject ah">Coding for ParagonNet</p><p class="subject ah sub">enchances my coding skills</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#4'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#6'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">5</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="6" class="scroll-area">    <img class="v-img" src="img/630pm.png">
+        
+                                            <div class="text-container" style="background: #673ab7;"><h1>6:30PM</h1><br><p class="subject ah">Exercise Time</p><p class="subject ah sub">maintaining and enhancing my physical health</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#5'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#7'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">6</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="7" class="scroll-area">
+        
+                                            <div class="text-container" style="background: #795548;"><h1>7:30PM</h1><br><p class="subject ah">Leisure / Cooldown Time</p><p class="subject ah sub">post-exercise resting period</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#6'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#8'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">7</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="8" class="scroll-area">    <img class="h-img" src="img/8pm.png">
+        
+                                            <div class="text-container" style="background: #9c27b0;"><h1>8:00PM</h1><br><p class="subject ah">Call Time w/ Family</p><p class="subject ah sub"></p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#7'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#9'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">8</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="9" class="scroll-area">    <img class="v-img" src="img/9pm.png">
+        
+                                            <div class="text-container" style="background: #070c39;"><h1>9:00PM</h1><br><p class="subject ah">Bedtime Routine</p><p class="subject ah fw sub">includes hygiene stuff, doing last minute things that i procrastinated about, checking for tasks...</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#8'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#10'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">9</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="10" class="scroll-area">    <img class="s-img" src="img/10pm.png">
+        
+                                            <div class="text-container" style="background: #59618c;"><h1>10:00PM</h1><br><p class="subject ah">Sleep Time</p><p class="subject ah sub">early sleep helps me stay focused, and improve my concentration.</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#9'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#11'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">10</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="11" class="scroll-area">    <img class="b-img" src="img/clock.png">
+        
+                                            <div class="text-container" style="background: #f44336;"><h1>Whole Day Overview</h1><br><p class="subject ah">Awake for 14 hours</p><p class="subject fw ah sub">an overview and summary of a typical day of mine</p>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#10'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#12'"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">11</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="12" class="scroll-area">    <img class="h-img" src="img/timechart.png">
+        
+                                            <div class="text-container time-a" id="time-a" style="background: #1a303b;"><h1 class="ah">Time Chart w/ Text</h1><a href="#1"><p class="subject ah sub">Waking Up</p></a><a href="#2"><p class="subject ah sub">Breakfast</p></a><a href="#3"><p class="subject ah sub">Morning Hygiene</p></a><a href="#4"><p class="subject ah sub">Watching Educational Videos</p></a><a href="#5"><p class="subject ah sub">Coding</p></a><a href="#6"><p class="subject ah sub">Exercise Time</p></a><a href="#7"><p class="subject ah sub">Cooldown Time</p></a><a href="#8"><p class="subject ah sub">Call Time w/ Family</p></a><a href="#9"><p class="subject ah sub">Bedtime Routine</p></a><a href="#10"><p class="subject ah sub">Sleep Time</p></a>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#11'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div><div id="down" onclick="location.href='#13';play()"><i class="fa-regular fa-down fa-2xl" style="color: #fff; margin-left: 0.5em;"></i></div></div><span id="pg-num">12</span>
+                                            
+                                            </div>
+        
+                                            </div>
+        <div id="13" class="scroll-area">
+        
+                                            <div class="text-container" style="background: #24273b;"><h1>Made by <a href="https://social.pnet.fun/zaiden">zaiden</a></h1><p class="subject ah fw">Student: Robert Ramos</p><p class="subject ah sub fw">All* pictures were taken from 09/04/23</p><p class="subject ah sub fw">*= Coding picture was taken from 09/06/23</p><div class="sites"><a href="https://g10.pnet.fun"><img class="icon2" src="img/10-final-nato.png"></a><a href="https://g10.pnet.fun/PSS"><img class="icon2" src="img/pss.png"></a><a href="https://social.pnet.fun"><img class="icon2" src="img/paragonnet_logo.png"></a></div>
+        
+                                            <div id="controls"><div id="up" onclick="location.href='#12'"><i class="fa-regular fa-up fa-2xl" style="color: #fff;"></i></div></div><span id="pg-num">13</span>
+                                            
+                                            </div>
+        
+                                            </div>
+    </div>
+    <audio id="audio" src="clapping.mp3"></audio>
+    <script defer src='https://kit.fontawesome.com/1ee8f271b9.js'></script>
+</body>
+</html>
