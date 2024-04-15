@@ -1,6 +1,0 @@
-$(window).scroll(function() {
-    if($(window).scrollTop() == $(document).height() - $(window).height()) {
-           // ajax call and append data on DIV 
-           $("#loadonscroll").html(ajaxData);
-    }
-});
