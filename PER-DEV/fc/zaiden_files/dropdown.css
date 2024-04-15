@@ -1,0 +1,92 @@
+/* Style the dropdown button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    width: 169px;
+	/* height: 100px; */
+	color: white;
+	background-color: #151728;
+	border-radius: 10px;
+	position: absolute; 
+	z-index: 1;
+	box-shadow: 1px 2px 4px rgb(0, 0, 0 , .4);
+	right: -100%;
+	top: -150%;
+	transform: translate(0px, 30px);
+	border: 1px solid #dadada;
+    border-radius: 7px;
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content li {
+    /* text-align: center; */
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.dropdown-content .follow-btn-dropdown {
+    display: inline-block;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.375rem 1.2rem;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 28px 28px 28px 28px;
+    -moz-border-radius: 28px 28px 28px 28px;
+    -webkit-border-radius: 28px 28px 28px 28px;
+    border: 1px solid #1DA1F2;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.dropdown-content .option-text {
+    /* text-align: right; */
+    /* margin-left: 30px; */
+    color: white;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown-content .icon {
+    text-align: center;
+    /* margin-left: 30px; */
+    color: white;
+    width: 20%;
+    /*float: left; */
+    /* transform: translate(8px, 2px); */
+    font-weight: bold;
+}
+
+/* Change color on hover */
+.dropdown-content li:hover {
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    transition: ease 0.5s;
+}
+
+/* Show the dropdown menu when the icon is clicked */
+.show {
+    display: inline-block;
+}
