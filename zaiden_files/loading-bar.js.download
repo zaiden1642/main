@@ -1,0 +1,25 @@
+// Simulate loading progress (0-100%)
+function simulateLoading() {
+    const loadingBar = document.getElementById('loading-bar');
+    let width = 1;
+    const interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);
+        } else {
+            width++;
+            loadingBar.style.width = width + '%';
+        }
+    }, 10);
+}
+
+// Call the loading simulation function when the page loads
+window.addEventListener('load', function() {
+    simulateLoading();
+
+    // Hide the loading bar when loading is complete (optional)
+    const loadingBar = document.getElementById('loading-bar');
+    loadingBar.style.width = '100%';
+    setTimeout(function() {
+        loadingBar.style.display = 'none';
+    }, 500);
+});
